@@ -30,6 +30,7 @@ resource "aws_key_pair" "ownkeym" {
   
 }
 
+/*
 resource "null_resource" "provisionnow" { 
 
     connection {
@@ -57,6 +58,7 @@ resource "null_resource" "provisionnow" {
     depends_on                  = [aws_instance.maininstance]
   
 }
+*/
 
 resource "aws_instance" "maininstance" {
     ami                         = data.aws_ami.ubuntu18.id
